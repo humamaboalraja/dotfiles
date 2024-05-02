@@ -47,3 +47,5 @@ alias ansi2560="for i in {0..255}; do printf '\x1b[38;5;%dmcolor%-5i\x1b[0m' \$i
 # Alacritty's tailored nonsense
 alias cr=clear & clear 
 
+# Fd
+alias fd='fd --type f --hidden --follow'
