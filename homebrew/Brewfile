@@ -169,11 +169,10 @@ cask "zxpinstaller"
 cask "iconjar"
 cask "wireshark"
 cask "selfcontrol"
-cask "readdle-spark" # mail client
-
 
 mas "ScreenBrush", id: 1233965871
-mas "StudyCards", id: 1534325530 
+mas "StudyCards", id: 1534325530
+mas "Spark Classic", id: 1176895641
 
 # Fonts
 cask "font-fira-code"
