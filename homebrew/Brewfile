@@ -1,0 +1,205 @@
+tap "homebrew/bundle"
+tap "homebrew/services"
+tap 'homebrew/cask-versions'
+tap 'homebrew/cask-fonts'
+
+# Platforms, Compilers, Runtimes & Languages
+
+# Rust
+brew "rust"
+brew "rust-analyzer"
+brew "rustup-init"
+
+# Golang
+brew "go"
+brew "go-task"
+brew "golangci-lint"
+brew "gopls"
+brew "delve" # Go debugger
+
+# Zig
+brew "zig"
+
+# C/C++
+brew "gcc"
+brew "clang"
+brew "llvm"
+brew "cmake"
+brew "gdb" # Debugger
+brew "lldb" # LLVM debugger
+brew "cppcheck" # Static analysis for C/C++
+brew "clang-format" # Code formatting
+brew "clang-tidy" # Static code analysis
+brew "vcpkg" # Dependency management
+brew "bear" # Build database generator
+
+
+# Additional Tools
+brew "doxygen" # Documentation generator
+brew "make" # Build utility
+brew "cppcheck"
+
+
+# Kernel Development 
+brew "binutils" # For low-level binary utilities
+brew "e2fsprogs" # Filesystem utilities
+brew "elfutils" # Analyze ELF files
+brew "valgrind" # Memory debugging
+brew "perf" # Performance profiling
+brew "hexyl" # Hex viewer for binary analysis
+brew "qemu"
+brew "nasm"
+
+# Kotlin
+brew "kotlin"
+brew "kotlin-language-server"
+brew "ktlint"
+
+# Haskell
+brew "haskell-language-server"
+
+# JVM Tooling
+brew "jdtls" # Java language server
+brew "gradle"
+brew "maven"
+
+# Node
+brew 'nvm'
+brew 'yarn'
+
+# Essentials
+brew "git"
+brew "neovim"
+brew "zsh"
+brew "tmux"
+brew "tpm"
+brew "atuin"
+brew 'zoxide'
+brew "lsd"
+brew "starship"
+
+# DX Essnetials
+brew "parallel"
+brew "jq"
+brew "noahgorstein/tap/jqp"
+brew "yq"
+brew "sd"
+brew "nmap"
+# rm alternative - rip
+brew "rm-improved" 
+# du's alternative - number of blocks used for files
+brew "dust"
+# cat's alternative
+brew "bat"
+# top's alternative
+brew "bpytop"
+brew "bottom" # another process/system monitor - btm
+
+brew "neofetch" # OS Specs
+brew "cpufetch" # CPU Specs
+brew "ranger"   # file manager
+brew "asciiquarium"
+
+# HTTP Clients
+brew "xh" 
+brew "curl"
+
+brew "fd"       # find's alternative 
+brew "fzf"      # fuzzy finder
+brew "tokei"    # project (files, lines, code) count
+brew "speedtest-cli"
+brew "broot"    # navigate directory trees
+brew "ripgrep"  # recursively search directories - rg
+brew "shellcheck"
+brew "dog"
+# MD Slides
+brew "slides"   
+brew "glow"
+brew "graphviz"
+brew "thezoraiz/ascii-image-converter/ascii-image-converter"
+brew "lolcat"
+
+
+# Ops
+brew "minikube"
+brew "kubectx"
+brew "terraform"
+brew "awscli"
+brew "derailed/k9s/k9s"
+brew "helm"
+brew "flyctl"
+
+# Github CLI
+brew "gh" 
+
+brew "pgcli"
+
+brew "avro-c"
+brew "python"
+brew "cowsay"
+brew "gnutls"
+brew "ffmpeg"
+brew "gnupg"
+brew "librdkafka"
+brew "kcat"
+brew "lazygit"
+brew "libzip"
+brew "mcfly"
+brew "sheldon"
+brew "telnet"
+brew "tldr"
+brew "wget"
+brew "snyk-cli"
+
+
+# Apps
+cask "alacritty"
+cask "docker"
+cask "orbstack"
+cask "rancher"
+cask "logisim-evolution"
+cask "raycast"
+cask "ngrok"
+cask "postman"
+cask "arc"
+cask "mongodb-compass"
+cask "raspberry-pi-imager"
+cask "tableplus"
+cask "clop"
+
+cask 'hpedrorodrigues/tools/dockutil'
+cask "figma"
+cask "iina" # media player for macOS
+cask "google-chrome"
+cask "grammarly-desktop"
+cask "jetbrains-toolbox"
+cask "linear-linear"
+cask "keka" # file archiver
+cask "notion"
+cask "obsidian"
+
+cask "slack"
+cask "zoom"
+cask "discord"
+
+cask "spotify"
+cask "screen-studio"
+
+cask "blender"
+cask "drawio"
+cask "zxpinstaller"
+cask "iconjar"
+cask "wireshark"
+cask "selfcontrol"
+
+mas "ScreenBrush", id: 1233965871
+mas "StudyCards", id: 1534325530
+mas "Spark Classic", id: 1176895641
+
+# Fonts
+cask "font-fira-code"
+cask "font-fira-code-nerd-font"
+cask "font-lato"
+cask "font-roboto"
+
+
