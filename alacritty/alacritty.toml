@@ -8,7 +8,7 @@ family = "Hack Nerd Font Mono"
 startup_mode = "Maximized"
 dynamic_padding = false
 opacity = 0.90
-decorations = "buttonless"
+decorations = "full"
 
 [colors.cursor]
 text = "CellBackground"
