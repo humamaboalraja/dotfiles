@@ -3,7 +3,7 @@ export ZSH="$HOME/.oh-my-zsh"
 
 export BAT_THEME=gruvbox-dark
 
-ZSH_THEME="powerlevel10k/powerlevel10k"
+# ZSH_THEME="powerlevel10k/powerlevel10k"
 
 plugins=(
   git
@@ -40,4 +40,8 @@ export NVM_DIR="$HOME/.nvm"
 # Tmux
 export EDITOR="nvim"
 #eval "$(tmuxifier init -)"
+
+export PATH=/usr/local/bin:$PATH
+
+PATH=~/.console-ninja/.bin:$PATH
 

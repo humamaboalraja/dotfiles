@@ -49,3 +49,11 @@ alias cr=clear & clear
 
 # Fd
 alias fd='fd --type f --hidden --follow'
+
+# Customs
+alias mts='maps-tools'
+
+
+# Net utils
+alias whp="lsof -i" # :0x
+

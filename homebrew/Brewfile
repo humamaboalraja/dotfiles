@@ -37,7 +37,6 @@ brew "bear" # Build database generator
 # Additional Tools
 brew "doxygen" # Documentation generator
 brew "make" # Build utility
-brew "vcpkg" # Dependency manager
 brew "cppcheck"
 
 
