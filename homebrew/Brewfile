@@ -19,11 +19,35 @@ brew "delve" # Go debugger
 
 # Zig
 brew "zig"
+
 # C/C++
 brew "gcc"
+brew "clang"
 brew "llvm"
+brew "cmake"
+brew "gdb" # Debugger
+brew "lldb" # LLVM debugger
+brew "cppcheck" # Static analysis for C/C++
+brew "clang-format" # Code formatting
+brew "clang-tidy" # Static code analysis
+brew "vcpkg" # Dependency management
+brew "bear" # Build database generator
 
-# Kernel dev utils
+
+# Additional Tools
+brew "doxygen" # Documentation generator
+brew "make" # Build utility
+brew "vcpkg" # Dependency manager
+brew "cppcheck"
+
+
+# Kernel Development 
+brew "binutils" # For low-level binary utilities
+brew "e2fsprogs" # Filesystem utilities
+brew "elfutils" # Analyze ELF files
+brew "valgrind" # Memory debugging
+brew "perf" # Performance profiling
+brew "hexyl" # Hex viewer for binary analysis
 brew "qemu"
 brew "nasm"
 
@@ -112,7 +136,7 @@ brew "gh"
 brew "pgcli"
 
 brew "avro-c"
-brew "python@3.11"
+brew "python"
 brew "cowsay"
 brew "gnutls"
 brew "ffmpeg"
@@ -122,7 +146,6 @@ brew "kcat"
 brew "lazygit"
 brew "libzip"
 brew "mcfly"
-brew "python@3.10"
 brew "sheldon"
 brew "telnet"
 brew "tldr"
