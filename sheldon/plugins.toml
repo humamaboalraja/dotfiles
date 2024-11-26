@@ -1,14 +1,41 @@
-[plugins]
+shell = "zsh"
+
+# Enable sheldon's deffered plugins loading 
+[templates]
+# https://sheldon.cli.rs/Examples.html
+defer = """{{ hooks?.pre | nl }}{% for file in files %}zsh-defer source "{{ file }}"\n{% endfor %}{{ hooks?.post | nl }}"""
+
+[plugins.zsh-defer]
+github = "romkatv/zsh-defer"
+
+
+# Custom scripts
+[plugins.compinit]
+local = "~/.zsh/plugins"
+apply = ["defer"]
+
+[plugins.path]
+local = "~/.zsh/plugins"
+apply = ["defer"]
+
+[plugins.aliases]
+local = "~/.zsh/plugins"
+apply = ["defer"]
+
+
+# Plugins
+[plugins.zsh-history-substring-search]
+github = "zsh-users/zsh-history-substring-search"
+use = ["{{ name }}.zsh"]
+apply = ["defer"]
+
+[plugins.zsh-auto-notify]
+github = "MichaelAquilina/zsh-auto-notify"
+use = ["auto-notify.plugin.zsh"]
+apply = ["defer"]
 
 [plugins.zsh-autosuggestions]
 github = "zsh-users/zsh-autosuggestions"
-
-[plugins.zsh-syntax-highlighting]
-github = "zsh-users/zsh-syntax-highlighting"
-
-[plugins.powerlevel10k]
-github = "romkatv/powerlevel10k"
-
-[plugins.oh-my-zsh]
-github = "ohmyzsh/ohmyzsh"
+use = ["{{ name }}.zsh"]
+apply = ["defer"]
 
