@@ -1,12 +1,12 @@
 #!/usr/bin/env zsh
 
 ## Navigation
-alias ../="cd .."
-alias .../="cd ../.."
-alias ..../="cd ../../.."
-alias ...../="cd ../../../.."
-alias ....../="cd ../../../../.."
-fcd() { cd "$(find . -type d -not -path '*/.*' | fzf)" && l; }
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ......="cd ../../../../.."
+fcd() { cd "$(find . -type d -not -path '*/.*' |  fzf)" && l; }
 f() { echo "$(find . -type f -not -path '*/.*' | fzf)" | pbcopy }
 fv() { nvim "$(find . -type f -not -path '*/.*' | fzf)" }
 
@@ -21,18 +21,23 @@ alias lst="lsd -la --tree  --long -G --depth=2"
 alias top="bpytop"
 alias top_l="top"
 
+
 ## Reads files
 alias cat=bat
 
+
 ## File manager
 alias rr="ranger"
+
 
 ## Zoxide
 alias c="z"
 alias cd=c
 
+
 # Exit
 alias x=exit
+
 
 ## HTTP Client
 alias http="xh"
@@ -45,21 +50,22 @@ alias v=nvim
 # Tmux 
 alias tx=tmux
 
+
 # ANSI 256-color palette
 alias ansi2560="for i in {0..255}; do printf '\x1b[38;5;%dmcolor%-5i\x1b[0m' \$i \$i ; if ! (( (\$i - 3) % 6 )); then echo ; fi ; done"
+
 
 # Alacritty's tailored nonsense
 alias cr=clear 
 
+
 # Fd
 alias fd='fd --type f --hidden --follow'
-
-# Customs
-alias mts='maps-tools'
 
 
 # Net utils
 alias whp="lsof -i" # :0x
+
 
 # K8s aliases 
 alias k="kubectl"
@@ -70,7 +76,7 @@ alias kdel="kubectl delete"
 alias kl="kubectl logs"
 alias kgpo="kubectl get pod"
 alias kgd="kubectl get deployments"
-alias kc="kubectx"
+alias kctx="kubectx"
 alias kns="kubens"
 alias kl="kubectl logs -f"
 alias ke="kubectl exec -it"
@@ -81,11 +87,10 @@ alias kcns='kubectl config set-context --current --namespace'
 alias g='git'
 alias gpu="git pull origin"
 alias gco="git checkout"
-
 alias ga='git add'
 alias gr='git remote'
 alias gre='git reset'
-alias gbl='git blame -w'
+alias gbl='git blame -w -e'
 alias gbs='git bisect'
 alias gb='git branch'
 alias gba='git branch --all'
@@ -94,8 +99,7 @@ alias gcp='git cherry-pick'
 alias gc="git commit -m"
 alias gcn!='git commit --verbose --no-edit --amend'
 alias gd='git diff'
-alias gds='git diff --staged'
-alias gdw='git diff --word-diff'
+alias gdw='git diff --word-iff'
 alias gf='git fetch'
 alias gfo='git fetch origin'
 alias glgg='git log --graph'
@@ -104,7 +108,6 @@ alias glod='git log --graph --topo-order --pretty="%Cred%h%Creset -%C(auto)%d%Cr
 alias glola='git log --graph --pretty="%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset" --all'
 alias glols='git log --graph --pretty="%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset" --stat'
 alias glol='git log --graph --pretty="%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset"'
-alias glog='git log --oneline --decorate --graph'
 alias gloga='git log --oneline --decorate --graph --all'
 alias glg='git log --stat'
 alias glgp='git log --stat --patch'
@@ -113,11 +116,6 @@ alias gpr='git pull --rebase'
 alias gprom='git pull --rebase origin $(git_main_branch)'
 alias gp='git push'
 alias gpf!='git push --force'
-alias grb='git rebase'
-alias grf='git reflog'
-alias gr='git remote'
-alias grh='git reset'
-alias grs='git restore'
 alias grev='git revert'
 alias grm='git rm'
 alias gcount='git shortlog --summary --numbered'
@@ -126,15 +124,7 @@ alias gsps='git show --pretty=short --show-signature'
 alias gsta='git stash'
 alias gst='git status'
 alias gss='git status --short'
-alias gsb='git status --short --branch'
-alias gsi='git submodule init'
-alias gsu='git submodule update'
-alias gsw='git switch'
-alias gta='git tag --annotate'
-alias gts='git tag --sign'
-alias gtv='git tag | sort -V'
-alias gunignore='git update-index --no-assume-unchanged'
-alias gwt='git worktree'
+
 
 # Docker
 alias dr='docker'
@@ -143,7 +133,11 @@ alias dr='docker'
 # Docker Compose
 alias dco="docker-compose"
 
+
 # Terraform
 alias tf='terraform'
 
+
+# Customs
+alias mts='maps-tools'
 

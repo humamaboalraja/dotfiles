@@ -1,25 +1,8 @@
+#!/usr/bin/env zsh
 
-export ZSH="$HOME/.oh-my-zsh"
-
-export BAT_THEME=gruvbox-dark
-
-# ZSH_THEME="powerlevel10k/powerlevel10k"
-
-plugins=(
-  git
-  docker
-  kubectl
-  terraform
-)
-source $ZSH/oh-my-zsh.sh
-
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-# Paths
-source "$HOME/.path"
-
-# Aliases
-source "$HOME/.aliases"
+# Set up basic environment variables & Paths
+export BAT_THEME="gruvbox-dark"
+export EDITOR=/opt/homebrew/bin/nvim
 
 # Sheldon
 eval "$(sheldon source)"
@@ -30,18 +13,16 @@ eval "$(starship init zsh)"
 # Zoxide
 eval "$(zoxide init zsh)"
 
-
-# export ATUIN_NOBIND="true"
+# Atuin
 eval "$(atuin init zsh)"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# export ATUIN_NOBIND="true" # disable atuin's invocation on up arrow
+#bindkey '^a' _atuin_search_widget
 
-# Tmux
-export EDITOR="nvim"
-#eval "$(tmuxifier init -)"
+bindkey "[D" backward-word
+bindkey "[C" forward-word
+bindkey "^a[" beginning-of-line
+bindkey "^a]" end-of-line
 
-export PATH=/usr/local/bin:$PATH
-
-PATH=~/.console-ninja/.bin:$PATH
+bindkey '^t' autosuggest-accept
 
