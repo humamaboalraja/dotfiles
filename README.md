@@ -1,6 +1,6 @@
 # Dotfiles ⚙️
 
-Welcome to my ergonomoically pleasing dotfiles! This is the configuration toolkit I use daily to keep my development workflow fast, organized, and hassle-free. 🛏️
+Welcome to my ergonomoically pleasing dotfiles! This is the configuration toolkit I use daily to keep my development workflow fast, organized, and hassle-free.
 
 ---
 
