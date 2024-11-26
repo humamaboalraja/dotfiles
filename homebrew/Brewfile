@@ -69,11 +69,12 @@ brew 'yarn'
 
 # Essentials
 brew "git"
+brew "git-lfs"
 brew "neovim"
 brew "zsh"
 brew "tmux"
 brew "tpm"
-brew "atuin"
+brew 'ellie/atuin/atuin'
 brew 'zoxide'
 brew "lsd"
 brew "starship"
@@ -113,7 +114,8 @@ brew "ripgrep"  # recursively search directories - rg
 brew "shellcheck"
 brew "dog"
 # MD Slides
-brew "slides"   
+brew "slides"
+brew "cowsay"
 brew "glow"
 brew "graphviz"
 brew "thezoraiz/ascii-image-converter/ascii-image-converter"
@@ -136,7 +138,6 @@ brew "pgcli"
 
 brew "avro-c"
 brew "python"
-brew "cowsay"
 brew "gnutls"
 brew "ffmpeg"
 brew "gnupg"
@@ -147,7 +148,7 @@ brew "libzip"
 brew "mcfly"
 brew "sheldon"
 brew "telnet"
-brew "tldr"
+brew "tldr" # console commands summary
 brew "wget"
 brew "snyk-cli"
 
