@@ -52,7 +52,7 @@ brew "nasm"
 
 # Kotlin
 brew "kotlin"
-brew "kotlin-language-server"
+brew "JetBrains/utils/kotlin-lsp"
 brew "ktlint"
 
 # Haskell
