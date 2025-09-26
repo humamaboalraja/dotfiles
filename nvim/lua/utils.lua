@@ -1,5 +1,5 @@
 local utils = {}
-
+-- TODO: clean up this
 function utils.merge_tables(t1, t2)
   local result = {}
   for _, v in ipairs(t1) do
@@ -17,12 +17,15 @@ function utils.has_value(tab, val)
       return true
     end
   end
-
   return false
 end
 
 function utils.nnoremap(lhs, rhs)
   vim.keymap.set("n", lhs, rhs, { silent = true })
+end
+
+function utils.remap(t, lhs, rhs, descC)
+  vim.keymap.set(t, lhs, rhs, { desc = descC, silent = true })
 end
 
 function utils.xnoremap(lhs, rhs)

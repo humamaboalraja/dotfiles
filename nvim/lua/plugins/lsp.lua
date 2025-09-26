@@ -14,10 +14,11 @@ local languages = {
   -- "hls",
   "kotlin_language_server",
   "jdtls",
-  "tsserver",
+  "ts_ls",
   "terraformls",
   "bashls",
   "tailwindcss",
+  "prismals",
 }
 local formatters_and_linters = {
   "stylua",

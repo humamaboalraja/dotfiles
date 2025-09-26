@@ -1,7 +1,7 @@
 return {
   "nvimtools/none-ls.nvim",
 
-  ft = { "c", "cpp", "h", "hpp", "go", "lua", "typescript" },
+  ft = { "c", "cpp", "rust", "h", "hpp", "go", "lua", "typescript" },
   config = function()
     local null_ls = require "null-ls"
     local b = null_ls.builtins
@@ -16,10 +16,10 @@ return {
       b.formatting.ktlint.with { filetypes = { "kotlin" } },
       b.diagnostics.ktlint.with { filetypes = { "kotlin" } },
 
-      -- null_ls.builtins.formatting.codelldb,
-      -- null_ls.builtins.diagnostics.rust_analyzer,
+      null_ls.builtins.formatting.codelldb,
+      null_ls.builtins.diagnostics.rust_analyzer,
       b.formatting.prettier.with { filetypes = { "typescript", "javascript" } },
-      -- null_ls.builtins.diagnostics.eslint_d,
+      null_ls.builtins.diagnostics.eslint_d,
     }
     null_ls.setup { sources = sources }
     vim.api.nvim_create_autocmd("BufWritePre", {
