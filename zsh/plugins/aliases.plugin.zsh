@@ -59,8 +59,6 @@ alias tx=tmux
 alias ansi2560="for i in {0..255}; do printf '\x1b[38;5;%dmcolor%-5i\x1b[0m' \$i \$i ; if ! (( (\$i - 3) % 6 )); then echo ; fi ; done"
 
 
-# Alacritty's tailored nonsense
-alias cr="clear && printf '\e[3J'"
 
 
 # Fd

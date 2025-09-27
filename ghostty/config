@@ -1,0 +1,19 @@
+theme = Gruvbox Dark Hard
+font-size = 20
+background-opacity = 0.9
+## background-blur = 0.9
+font-family = "Hack Nerd Font Mono" 
+macos-non-native-fullscreen = false
+macos-titlebar-style = transparent
+macos-option-as-alt = true 
+# macos-window-shadow = false 
+#
+# keybind = ctrl+o=ignore
+keybind = ctrl+shift+.=reload_config
+
+# :shell-integration = fish
+# shell-integration-features = cursor, sudo, title
+ 
+# macos-titlebar-style = tabs
+# macos-option-as-alt = true
+mouse-hide-while-typing = true
