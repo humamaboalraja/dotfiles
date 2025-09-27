@@ -13,6 +13,7 @@ local languages = {
   "yamlls",
   -- "hls",
   "kotlin_language_server",
+  -- "kotlin-lsp",
   "jdtls",
   "ts_ls",
   "terraformls",
@@ -31,6 +32,8 @@ local formatters_and_linters = {
   "delve",
   "prettier",
   "eslint_d",
+  "ktlint",
+  "ktfmt",
   "cpptools",
 }
 local configured_lsp = {
@@ -86,6 +89,7 @@ return {
       -- custom configured lsp
       -- require("lspconfigs.rust-tools")
       require "lspconfigs.config.go-conf"
-    end,
+      -- require "lspconfigs.config.kotlin-conf"
+    end
   },
 }

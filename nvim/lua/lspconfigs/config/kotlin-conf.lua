@@ -1,0 +1,34 @@
+
+-- local shared = require('lspconfigs.shared_lsp_config')
+-- local lspconfig = require('lspconfig')
+-- local configs = require('lspconfig.configs')
+-- local util = require('lspconfig.util')
+
+-- -- Define the server (only once)
+-- if not configs.kotlin_lsp then
+--   configs.kotlin_lsp = {
+--     default_config = {
+--       cmd = (function()
+--         local exe = vim.fn.exepath("kotlin-lsp")
+--         return exe ~= "" and { exe } or { "kotlin-lsp" }
+--       end)(),
+--       filetypes = { "kotlin", "kts" },
+--       root_dir = function(fname)
+--         return util.root_pattern(
+--           "settings.gradle", "settings.gradle.kts",
+--           "build.gradle", "build.gradle.kts",
+--           ".git"
+--         )(fname) or util.find_git_ancestor(fname) or vim.loop.cwd()
+--       end,
+--     },
+--     docs = {
+--       description = [[Official Kotlin LSP (kotlin-lsp).]],
+--     },
+--   }
+-- end
+
+-- -- Now you can setup
+-- lspconfig.kotlin_lsp.setup({
+--   capabilities = shared.capabilities,
+--   on_attach = shared.on_attach,
+-- })

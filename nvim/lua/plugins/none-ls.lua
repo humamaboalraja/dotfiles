@@ -1,7 +1,7 @@
 return {
   "nvimtools/none-ls.nvim",
 
-  ft = { "c", "cpp", "rust", "h", "hpp", "go", "lua", "typescript" },
+  ft = { "c", "cpp", "rust", "kts", "kotlin", "h", "hpp", "go", "lua", "typescript" },
   config = function()
     local null_ls = require "null-ls"
     local b = null_ls.builtins
@@ -13,8 +13,8 @@ return {
       b.formatting.goimports_reviser.with { filetypes = { "go" } },
       b.formatting.golines.with { filetypes = { "go" } },
 
-      b.formatting.ktlint.with { filetypes = { "kotlin" } },
-      b.diagnostics.ktlint.with { filetypes = { "kotlin" } },
+      b.formatting.ktlint.with { filetypes = { "kotlin", "kts" } },
+      b.diagnostics.ktlint.with { filetypes = { "kotlin", "kts" } },
 
       null_ls.builtins.formatting.codelldb,
       null_ls.builtins.diagnostics.rust_analyzer,

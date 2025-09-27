@@ -54,6 +54,7 @@ brew "nasm"
 brew "kotlin"
 brew "JetBrains/utils/kotlin-lsp"
 brew "ktlint"
+brew "ktfmt"
 
 # Haskell
 brew "haskell-language-server"
