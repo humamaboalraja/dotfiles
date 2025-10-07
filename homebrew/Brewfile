@@ -52,8 +52,9 @@ brew "nasm"
 
 # Kotlin
 brew "kotlin"
-brew "kotlin-language-server"
+brew "JetBrains/utils/kotlin-lsp"
 brew "ktlint"
+brew "ktfmt"
 
 # Haskell
 brew "haskell-language-server"
@@ -69,8 +70,10 @@ brew 'yarn'
 
 # Essentials
 brew "git"
-brew "git-lfs"
 brew "neovim"
+brew "git-lfs"
+brew "git-delta"
+brew "lazygit"
 brew "zsh"
 brew "tmux"
 brew "tpm"
@@ -96,14 +99,17 @@ brew "bat"
 brew "bpytop"
 brew "bottom" # another process/system monitor - btm
 
+brew "sevenzip"
 brew "neofetch" # OS Specs
 brew "cpufetch" # CPU Specs
-brew "ranger"   # file manager
+brew "yazi"   # file manager
+brew "tree"
 brew "asciiquarium"
 
 # HTTP Clients
 brew "xh" 
 brew "curl"
+brew "atac"
 
 brew "fd"       # find's alternative 
 brew "fzf"      # fuzzy finder
@@ -123,6 +129,7 @@ brew "lolcat"
 
 
 # Ops
+brew "sshs"
 brew "minikube"
 brew "kubectx"
 brew "terraform"
@@ -143,18 +150,21 @@ brew "ffmpeg"
 brew "gnupg"
 brew "librdkafka"
 brew "kcat"
-brew "lazygit"
 brew "libzip"
 brew "mcfly"
 brew "sheldon"
 brew "telnet"
 brew "tldr" # console commands summary
+brew "tlrc"
+brew "cheat"
+brew "navi"
+brew "eg-examples"
 brew "wget"
 brew "snyk-cli"
 
 
 # Apps
-cask "alacritty"
+cask "ghostty"
 cask "docker"
 cask "orbstack"
 cask "rancher"
@@ -202,5 +212,8 @@ cask "font-fira-code"
 cask "font-fira-code-nerd-font"
 cask "font-lato"
 cask "font-roboto"
+brew "font-sf-pro"
+cask "sf-symbols"
+
 
 

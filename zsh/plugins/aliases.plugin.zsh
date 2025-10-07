@@ -11,11 +11,15 @@ f() { echo "$(find . -type f -not -path '*/.*' | fzf)" | pbcopy }
 fv() { nvim "$(find . -type f -not -path '*/.*' | fzf)" }
 
 
+alias fzf='fzf --preview="bat --color=always --line-range :500 {}"'
+alias vzf='vim $(fzf --preview="bat --color=always --line-range :500 {}")'
 ## Default util alternatives
 
 ## List
-alias ls="lsd -la --icon=always"
+# alias ls="lsd -la --icon=always"
 alias lst="lsd -la --tree  --long -G --depth=2"
+alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
+
 
 ## Task manager
 alias top="bpytop"
@@ -55,8 +59,6 @@ alias tx=tmux
 alias ansi2560="for i in {0..255}; do printf '\x1b[38;5;%dmcolor%-5i\x1b[0m' \$i \$i ; if ! (( (\$i - 3) % 6 )); then echo ; fi ; done"
 
 
-# Alacritty's tailored nonsense
-alias cr=clear 
 
 
 # Fd
@@ -136,8 +138,3 @@ alias dco="docker-compose"
 
 # Terraform
 alias tf='terraform'
-
-
-# Customs
-alias mts='maps-tools'
-

@@ -28,6 +28,7 @@ return {
     }
     dashboard.section.bottom_buttons.val = {
       dashboard.button("e", "Nf", ":ene <BAR> startinsert <CR>"),
+      dashboard.button("SPC wr", "󰁯  > Restore Session For Current Directory", "<cmd>SessionRestore<CR>"),
     }
     dashboard.section.top_buttons.val = {}
 

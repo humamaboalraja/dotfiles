@@ -17,7 +17,7 @@ return {
     {
       "<C-e>",
       function()
-        require("neo-tree.command").execute { source = "filesystem", position = "right", focus = true }
+        require("neo-tree.command").execute { source = "filesystem", position = "left", focus = true }
       end,
       desc = "Focus file explorer",
     },
